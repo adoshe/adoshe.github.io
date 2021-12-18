@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GIS Project</title>
+
+</style></head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openSection(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openSection(event, 'About Me')">About Me</button>
+  
+</div>
+
+<div id="Home" class="tabcontent">
+  <h1  style="font-family:verdana;">Home</h1>
+<i><h2 style="background-color:powderblue;">Project Ideas: How GIS can be applied in the agricultural sector</h2></i>
+	<p> GIS in agriculture is not a new phenomenon anymore. The agricultural sector is the mainstay of the rural Indian economy around which socio-economic privileges and deprivations revolve, and any change in its structure is likely to have a corresponding impact on the existing pattern of social equality. No strategy of economic reform can succeed without sustained and broad-based agricultural development, which is critical for raising living standards, alleviating poverty, assuring food security, generating a buoyant market for expansion of industry and services and making a substantial contribution to the national economic growth.
+	</p>
+	<p> The future growth in agriculture must come from new technologies which are not only cost-effective but also in conformity with natural climatic regime of the country; technologies relevant to rain-fed areas specifically; continued genetic improvements for better seeds and yields; data improvements for better research, better results, and sustainable planning; bridging the gap between knowledge and practice; and judicious land use resource surveys, efficient management practices and sustainable use of natural resources.
+	</p>
+<p>Sustainable agricultural production depends on the judicious use of natural resources (soil, water, livestock, plant genetic, fisheries, forest, climate, rainfall, and topography) in an acceptable technology management under the prevailing socio-economic infrastructure. Technology plays an important role in the rapid economic growth and social transformation in developing countries.
+</p><br>
+</div>
+
+<div id="About Me" class="tabcontent">
+  <h1  style="font-family:verdana;">About Me</h1>
+  <p>I am a student doing my degree in Geospatial and Information Science (GIS) in JKUAT.
+	I am someone that is very passionate about agriculture from my early childhood days. I am looking to combine my career path (GIS) and my passion(agriculture) to make the world a better place.
+  </p>
+  <p>
+GIS is a green technology that is making a difference on our planet and to its people every day for key decisions about wildlife habitat, human health, renewable energy, climate change, water quality and availability, wilderness areas, and much more.
+  </p> 
+</div>
+
+<script>
+function openSection(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<a href="https://www.youtube.com/watch?v=LuZR8Br66HY">Get more information</a>
+<h3> subscribe to get newsletters on email</h3>
+<form>
+ <label for="email">Enter your email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <input type="checkbox" id="occupation1" name="occupation1" value="Student">
+  <label for="occupation1"> I am a student</label><br>
+  <input type="checkbox" id="occupation2" name="occupation2" value="Employed">
+  <label for="occupation2"> I am employed</label><br>
+  <input type="checkbox" id="occupation3" name="occupation3" value="Boss">
+  <label for="occupation3"> I have my own organization</label> <br>
+<form action="/action_page.php">
+  <input type="radio" id="html" name="subscribe" value="subscribe">
+  <label for="html">subscribe</label><br> </form>
+</form>
+
+</body>
+</html>
